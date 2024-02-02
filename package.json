@@ -2,12 +2,11 @@
   "name": "univer-webpack4",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "engines": {
     "node": ">=12.16.1"
   },
   "scripts": {
-    "dev": "webpack-dev-server --open --config=config/webpack.dev.js",
+    "dev": "webpack-dev-server --config=config/webpack.dev.js",
     "build": "webpack --config=config/webpack.prod.js"
   },
   "dependencies": {
