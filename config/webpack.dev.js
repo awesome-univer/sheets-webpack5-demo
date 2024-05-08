@@ -5,6 +5,9 @@ const ROOT_DIRECTORY = process.cwd();
 
 module.exports = {
   mode: "development",
+  externals: {
+    fs: 'commonjs2 node:fs'
+  },
   entry: {
     main: path.resolve(ROOT_DIRECTORY, "src/index.js"),
   },
