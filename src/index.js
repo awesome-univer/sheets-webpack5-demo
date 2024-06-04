@@ -1,6 +1,6 @@
 import "./style.css";
 
-import { LocaleType, Univer } from "@univerjs/core";
+import { LocaleType, Univer, UniverInstanceType } from "@univerjs/core";
 import { defaultTheme } from "@univerjs/design";
 import { UniverDocsPlugin } from "@univerjs/docs";
 import { UniverDocsUIPlugin } from "@univerjs/docs-ui";
@@ -47,4 +47,4 @@ univer.registerPlugin(UniverFormulaEnginePlugin);
 univer.registerPlugin(UniverSheetsFormulaPlugin);
 
 // create univer sheet instance
-univer.createUniverSheet(DEFAULT_WORKBOOK_DATA_DEMO);
+univer.createUnit(UniverInstanceType.UNIVER_SHEET, DEFAULT_WORKBOOK_DATA_DEMO);
