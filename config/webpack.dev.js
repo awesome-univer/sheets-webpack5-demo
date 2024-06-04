@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { UniverPlugin } = require('@univerjs/webpack-plugin')
 
 const ROOT_DIRECTORY = process.cwd();
 
@@ -118,5 +119,6 @@ module.exports = {
       template: path.resolve(ROOT_DIRECTORY, "src/index.html"),
       filename: "index.html",
     }),
+    new UniverPlugin()
   ],
 };

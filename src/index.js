@@ -1,11 +1,6 @@
 import "./style.css";
-import "@univerjs/design/lib/index.css";
-import "@univerjs/ui/lib/index.css";
-import "@univerjs/sheets-ui/lib/index.css";
-import "@univerjs/sheets-formula/lib/index.css";
-import "@univerjs/sheets-numfmt/lib/index.css";
 
-import { LocaleType, LogLevel, Univer } from "@univerjs/core";
+import { LocaleType, Univer } from "@univerjs/core";
 import { defaultTheme } from "@univerjs/design";
 import { UniverDocsPlugin } from "@univerjs/docs";
 import { UniverDocsUIPlugin } from "@univerjs/docs-ui";
@@ -18,11 +13,16 @@ import { UniverSheetsUIPlugin } from "@univerjs/sheets-ui";
 import { UniverUIPlugin } from "@univerjs/ui";
 import { DEFAULT_WORKBOOK_DATA_DEMO } from "./data";
 
+import { zhCN, enUS } from 'univer:locales'
+
 // univer
 const univer = new Univer({
   theme: defaultTheme,
   locale: LocaleType.ZH_CN,
-  logLevel: LogLevel.VERBOSE,
+  locales: {
+    [LocaleType.ZH_CN]: zhCN,
+    [LocaleType.EN_US]: enUS,
+  },
 });
 
 // core plugins

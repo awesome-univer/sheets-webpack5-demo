@@ -1,6 +1,7 @@
 const path = require("path");
 
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { UniverPlugin } = require('@univerjs/webpack-plugin');
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
@@ -126,6 +127,7 @@ module.exports = {
         minifyURLs: true,
       },
     }),
+    new UniverPlugin(),
     new MiniCssExtractPlugin({
       filename: "[name].[contenthash:8].bundle.css",
       chunkFilename: "[name].[contenthash:8].chunk.css",
