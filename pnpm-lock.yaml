@@ -68,8 +68,8 @@ devDependencies:
     specifier: ^7.9.0
     version: 7.24.6(@babel/core@7.24.6)
   '@univerjs/webpack-plugin':
-    specifier: ^0.4.3
-    version: 0.4.3(webpack@4.47.0)
+    specifier: ^0.4.4
+    version: 0.4.4(webpack@4.47.0)
   babel-loader:
     specifier: ^8.1.0
     version: 8.3.0(@babel/core@7.24.6)(webpack@4.47.0)
@@ -1565,8 +1565,8 @@ packages:
       undici-types: 5.26.5
     dev: true
 
-  /@types/node@20.14.2:
-    resolution: {integrity: sha512-xyu6WAMVwv6AKFLB+e/7ySZVr/0zLCzOa7rSpq6jNwpqOrUbcACDWC+53d4n2QHOnDou0fbIsg8wZu/sxrnI4Q==}
+  /@types/node@20.14.5:
+    resolution: {integrity: sha512-aoRR+fJkZT2l0aGOJhuA8frnCSoNX6W7U2mpNq63+BxBIj5BQFt8rHy627kijCmm63ijdSdwvGgpUsU6MBsZZA==}
     dependencies:
       undici-types: 5.26.5
     dev: false
@@ -1932,8 +1932,8 @@ packages:
       - typescript
     dev: false
 
-  /@univerjs/webpack-plugin@0.4.3(webpack@4.47.0):
-    resolution: {integrity: sha512-BLv74anZ1GHK36t3msgvoZ3AMqpDmxzLeuDHSTqLemloWcYNnCrSAHIQHBTHD7FscgG1ewa7QVICkx24l9HLeA==}
+  /@univerjs/webpack-plugin@0.4.4(webpack@4.47.0):
+    resolution: {integrity: sha512-MJ88zyEd08Qzumx5aOiuqzJ2UHJNXhXnp1jNg0CSBGz7i2fyKvkVHKhowAFNWHUoW5BhPFUI4iacQV9bvxlK+Q==}
     engines: {node: '>=16.0.0', npm: '>=8.0.0'}
     peerDependencies:
       webpack: ^4.0.0 || ^5.0.0
@@ -6610,7 +6610,7 @@ packages:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 20.14.2
+      '@types/node': 20.14.5
       long: 5.2.3
     dev: false
 
