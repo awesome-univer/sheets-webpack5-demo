@@ -26,7 +26,7 @@ import { zhCN, enUS } from 'univer:locales'
 // univer
 const univer = new Univer({
   theme: defaultTheme,
-  locale: LocaleType.ZH_CN,
+  locale: LocaleType.EN_US,
   locales: {
     [LocaleType.ZH_CN]: zhCN,
     [LocaleType.EN_US]: enUS,

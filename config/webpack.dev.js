@@ -18,13 +18,10 @@ module.exports = {
     chunkFilename: "[name].chunk.js",
   },
   devServer: {
-    contentBase: path.resolve(ROOT_DIRECTORY, "build"),
     compress: true,
     port: 3000,
-    overlay: true,
-    disableHostCheck: true,
   },
-  devtool: "cheap-module-eval-source-map",
+  devtool: "cheap-module-source-map",
   module: {
     rules: [
       {
@@ -53,12 +50,6 @@ module.exports = {
           },
           {
             loader: "postcss-loader",
-            options: {
-              ident: "postcss",
-              config: {
-                path: path.resolve(ROOT_DIRECTORY, "config"),
-              },
-            },
           },
         ],
       },
