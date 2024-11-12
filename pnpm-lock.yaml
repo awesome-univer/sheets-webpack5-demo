@@ -68,8 +68,8 @@ devDependencies:
     specifier: ^7.25.3
     version: 7.25.3(@babel/core@7.25.2)
   '@univerjs/webpack-plugin':
-    specifier: ^0.5.0
-    version: 0.5.0(webpack@5.93.0)
+    specifier: ^0.5.1
+    version: 0.5.1(webpack@5.93.0)
   babel-loader:
     specifier: ^9.1.3
     version: 9.1.3(@babel/core@7.25.2)(webpack@5.93.0)
@@ -96,10 +96,10 @@ devDependencies:
     version: 6.0.1(webpack@5.93.0)
   postcss-loader:
     specifier: ^8.1.1
-    version: 8.1.1(postcss@8.4.48)(webpack@5.93.0)
+    version: 8.1.1(postcss@8.4.49)(webpack@5.93.0)
   postcss-safe-parser:
     specifier: ^7.0.0
-    version: 7.0.0(postcss@8.4.48)
+    version: 7.0.0(postcss@8.4.49)
   resolve-url-loader:
     specifier: ^5.0.0
     version: 5.0.0
@@ -2186,8 +2186,8 @@ packages:
       - typescript
     dev: false
 
-  /@univerjs/webpack-plugin@0.5.0(webpack@5.93.0):
-    resolution: {integrity: sha512-Ii1z/oZnE+hGepne8RZ0WGJ/WTLQAs5IW8Oz/aqIB8dYfU67kiqMPJXABm5UjtMC30fq1aujBSqJilc5UI55sQ==}
+  /@univerjs/webpack-plugin@0.5.1(webpack@5.93.0):
+    resolution: {integrity: sha512-CewBhgiwdkNnNBAqzAmrsd6k8PI2ULLVcOxW937gJYYZ4pFwhxG3BCRbe//dX1/fR1i8kkocI/pmKLKVxSWTkw==}
     engines: {node: '>=16.0.0', npm: '>=8.0.0'}
     peerDependencies:
       webpack: ^4.0.0 || ^5.0.0
@@ -4795,7 +4795,7 @@ packages:
       postcss: 8.4.41
     dev: true
 
-  /postcss-loader@8.1.1(postcss@8.4.48)(webpack@5.93.0):
+  /postcss-loader@8.1.1(postcss@8.4.49)(webpack@5.93.0):
     resolution: {integrity: sha512-0IeqyAsG6tYiDRCYKQJLAmgQr47DX6N7sFSWvQxt6AcupX8DIdmykuk/o/tx0Lze3ErGHJEp5OSRxrelC6+NdQ==}
     engines: {node: '>= 18.12.0'}
     peerDependencies:
@@ -4810,7 +4810,7 @@ packages:
     dependencies:
       cosmiconfig: 9.0.0
       jiti: 1.21.6
-      postcss: 8.4.48
+      postcss: 8.4.49
       semver: 7.6.3
       webpack: 5.93.0(webpack-cli@5.1.4)
     transitivePeerDependencies:
@@ -5049,13 +5049,13 @@ packages:
       postcss-value-parser: 4.2.0
     dev: true
 
-  /postcss-safe-parser@7.0.0(postcss@8.4.48):
+  /postcss-safe-parser@7.0.0(postcss@8.4.49):
     resolution: {integrity: sha512-ovehqRNVCpuFzbXoTb4qLtyzK3xn3t/CUBxOs8LsnQjQrShaB4lKiHoVqY8ANaC0hBMHq5QVWk77rwGklFUDrg==}
     engines: {node: '>=18.0'}
     peerDependencies:
       postcss: ^8.4.31
     dependencies:
-      postcss: 8.4.48
+      postcss: 8.4.49
     dev: true
 
   /postcss-selector-parser@6.1.2:
@@ -5111,8 +5111,8 @@ packages:
     dev: false
     optional: true
 
-  /postcss@8.4.48:
-    resolution: {integrity: sha512-GCRK8F6+Dl7xYniR5a4FYbpBzU8XnZVeowqsQFYdcXuSbChgiks7qybSkbvnaeqv0G0B+dd9/jJgH8kkLDQeEA==}
+  /postcss@8.4.49:
+    resolution: {integrity: sha512-OCVPnIObs4N29kxTjzLfUryOkvZEq+pf8jTF0lg8E7uETuWHA+v7j3c/xJmiqpX450191LlmZfUKkXxkTry7nA==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       nanoid: 3.3.7
