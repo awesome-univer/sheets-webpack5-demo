@@ -96,10 +96,10 @@ devDependencies:
     version: 6.0.1(webpack@5.93.0)
   postcss-loader:
     specifier: ^8.1.1
-    version: 8.1.1(postcss@8.5.4)(webpack@5.93.0)
+    version: 8.1.1(postcss@8.5.5)(webpack@5.93.0)
   postcss-safe-parser:
     specifier: ^7.0.0
-    version: 7.0.0(postcss@8.5.4)
+    version: 7.0.0(postcss@8.5.5)
   resolve-url-loader:
     specifier: ^5.0.0
     version: 5.0.0
@@ -1476,7 +1476,7 @@ packages:
     engines: {node: ^8.13.0 || >=10.10.0}
     dependencies:
       '@grpc/proto-loader': 0.7.15
-      '@types/node': 24.0.0
+      '@types/node': 24.0.1
     dev: false
 
   /@grpc/proto-loader@0.7.15:
@@ -1797,8 +1797,8 @@ packages:
       undici-types: 6.18.2
     dev: true
 
-  /@types/node@24.0.0:
-    resolution: {integrity: sha512-yZQa2zm87aRVcqDyH5+4Hv9KYgSdgwX1rFnGvpbzMaC7YAljmhBET93TPiTd3ObwTL+gSpIzPKg5BqVxdCvxKg==}
+  /@types/node@24.0.1:
+    resolution: {integrity: sha512-MX4Zioh39chHlDJbKmEgydJDS3tspMP/lnQC67G3SWsTnb9NeYVWOjkxpOSy4oMfPs4StcWHwBrvUb4ybfnuaw==}
     dependencies:
       undici-types: 7.8.0
     dev: false
@@ -4795,7 +4795,7 @@ packages:
       postcss: 8.4.41
     dev: true
 
-  /postcss-loader@8.1.1(postcss@8.5.4)(webpack@5.93.0):
+  /postcss-loader@8.1.1(postcss@8.5.5)(webpack@5.93.0):
     resolution: {integrity: sha512-0IeqyAsG6tYiDRCYKQJLAmgQr47DX6N7sFSWvQxt6AcupX8DIdmykuk/o/tx0Lze3ErGHJEp5OSRxrelC6+NdQ==}
     engines: {node: '>= 18.12.0'}
     peerDependencies:
@@ -4810,7 +4810,7 @@ packages:
     dependencies:
       cosmiconfig: 9.0.0
       jiti: 1.21.6
-      postcss: 8.5.4
+      postcss: 8.5.5
       semver: 7.6.3
       webpack: 5.93.0(webpack-cli@5.1.4)
     transitivePeerDependencies:
@@ -5049,13 +5049,13 @@ packages:
       postcss-value-parser: 4.2.0
     dev: true
 
-  /postcss-safe-parser@7.0.0(postcss@8.5.4):
+  /postcss-safe-parser@7.0.0(postcss@8.5.5):
     resolution: {integrity: sha512-ovehqRNVCpuFzbXoTb4qLtyzK3xn3t/CUBxOs8LsnQjQrShaB4lKiHoVqY8ANaC0hBMHq5QVWk77rwGklFUDrg==}
     engines: {node: '>=18.0'}
     peerDependencies:
       postcss: ^8.4.31
     dependencies:
-      postcss: 8.5.4
+      postcss: 8.5.5
     dev: true
 
   /postcss-selector-parser@6.1.2:
@@ -5103,10 +5103,22 @@ packages:
   /postcss@8.5.4:
     resolution: {integrity: sha512-QSa9EBe+uwlGTFmHsPKokv3B/oEMQZxfqW0QqNCyhpa6mB1afzulwn8hihglqAb2pOw+BJgNlmXQ8la2VeHB7w==}
     engines: {node: ^10 || ^12 || >=14}
+    requiresBuild: true
     dependencies:
       nanoid: 3.3.11
       picocolors: 1.1.1
       source-map-js: 1.2.1
+    dev: false
+    optional: true
+
+  /postcss@8.5.5:
+    resolution: {integrity: sha512-d/jtm+rdNT8tpXuHY5MMtcbJFBkhXE6593XVR9UoGCH8jSFGci7jGvMGH5RYd5PBJW+00NZQt6gf7CbagJCrhg==}
+    engines: {node: ^10 || ^12 || >=14}
+    dependencies:
+      nanoid: 3.3.11
+      picocolors: 1.1.1
+      source-map-js: 1.2.1
+    dev: true
 
   /pretty-error@4.0.0:
     resolution: {integrity: sha512-AoJ5YMAcXKYxKhuJGdcvse+Voc6v1RgnsR3nWcYU7q4t6z0Q6T86sv5Zq8VIRbOWWFpvdGE83LtdSMNd+6Y0xw==}
@@ -5142,7 +5154,7 @@ packages:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 24.0.0
+      '@types/node': 24.0.1
       long: 5.3.2
     dev: false
 
